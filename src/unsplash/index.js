@@ -3,7 +3,7 @@ import Unsplash, { toJson } from 'unsplash-js';
   export const unsplash = new Unsplash({
     applicationId: "36b62b015efc76ea8d1f5675d426f9bf7962b250e6faafff25556b9aa1e2a49c",
     secret: "a662c4dbb84f8ef70842a5ad00c9f0f46e699b8d5371062d791048a04fd9cfc2",
-    callbackUrl: "http://localhost:8080/auth"
+    callbackUrl: "https://vitekmy.github.io/auth"
   });
 
   export const authenticationUrl = unsplash.auth.getAuthenticationUrl([
