@@ -7,6 +7,7 @@
 }
 
 .authorBlock_left_img {
+  max-width: 150px;
   min-width: 150px;
   padding-left: 13px;
 }
@@ -34,6 +35,22 @@ h1, p {
 
 .nav-wrapper {
   box-shadow: 0 7px 24px 0 #0000009c;
+}
+
+.main-card {
+  margin-top: 50px !important;
+}
+
+.backgr_img {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.backgr_img_container {
+  top: 0;
+  width: 0;
+  width: 100%;
 }
 
 
