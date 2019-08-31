@@ -1,0 +1,16 @@
+h1, p {
+  margin: 0 !important;
+}
+
+.Authorization-text {
+  font-size: 20px;
+  padding: 20px 0 !important;
+}
+
+.btn-center {
+  padding-top: 20px;
+}
+
+.nav-wrapper {
+  box-shadow: 0 7px 24px 0 #0000009c;
+}
