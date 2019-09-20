@@ -1,23 +1,12 @@
-# BEGIN WordPress]
+# BEGIN WordPress
 
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.html$ - [L]
-# BEGIN delete double page
-RewriteCond %{QUERY_STRING} ^replytocom= [NC]
-RewriteRule (.*) $1? [R=301,L]
-RewriteRule (.+)/feed /$1 [R=301,L]
-RewriteRule (.+)/attachment /$1 [R=301,L]
-RewriteRule (.+)/comment-page /$1 [R=301,L]
-RewriteRule (.+)/comments /$1 [R=301,L]
-RewriteRule (.+)/trackback /$1 [R=301,L]
-RewriteCond %{QUERY_STRING} ^attachment_id= [NC]
-RewriteRule (.*) $1? [R=301,L]
-# END delete double page
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
-</IfModule>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+ </IfModule>
 
 # END WordPress
